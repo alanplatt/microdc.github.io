@@ -7,7 +7,7 @@ npm install
 gem install --no-ri --no-rdoc awesome_bot
 ```
 
-### Test Localy
+### Test Locally
 
 ```sh
 npm run serve
@@ -19,8 +19,8 @@ npm run serve
 - To insert a top level entry add a bullet with the format:
     - \- \*\*Entry title\*\*
 - To insert a page entry add a bullet with the format
-    - \[Entry Title\]\(path to md file\)
+    - \[Entry Title\]\(path to markdown file\)
 
-### Edit the coverpage
+### Edit the cover page
 
 Open the file docs/_coverpage.md
