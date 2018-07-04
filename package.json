@@ -6,7 +6,7 @@
   },
   "description": "Website with structured documentation about microdc",
   "scripts": {
-    "serve": "docsify serve docs",
+    "serve": "python -m http.server 3000",
     "lint": "markdownlint docs --config docs/.markdownlint.json",
     "spellcheck": "mdspell 'docs/**/*.md' -r --en-gb --ignore-numbers --ignore-acronyms",
     "internalbroken": "remark -u validate-links docs --ignore-path .remarkignore",
