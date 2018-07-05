@@ -1,4 +1,38 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
-<title>μdc</title>
-<p>coming soon to a k8s cluster near you</p>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Start Testing</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <script src="//unpkg.com/docsify-edit-on-github@1.0.1/index.js"></script>
+</head>
+
+<body>
+    <div data-app id="app">Loading...</div>
+    <script>
+    window.$docsify = {
+        homepage: 'docs/index.md',
+        name: 'Microdc',
+        repo: 'https://github.com/microdc',
+        ga: 'UA',
+        coverpage: true,
+        loadSidebar: true,
+        subMaxLevel: 1,
+        auto2top:true,
+        plugins: [
+            EditOnGithubPlugin.create(
+                'https://github.com/microdc/microdc.github.io/tree/master/docs/'
+            )
+        ]
+    }
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
+</body>
+
+</html>
