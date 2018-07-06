@@ -1,3 +1,5 @@
+![Master Build](https://travis-ci.org/microdc/microdc.github.io.svg?branch=master "Master Build")
+
 # Contributing
 
 ### Install dependencies:
