@@ -6,9 +6,9 @@
   },
   "description": "Website with structured documentation about microdc",
   "scripts": {
-    "serve": "python -m http.server 3000",
+    "serve": "cd docs; python -m http.server 3000",
     "lint": "markdownlint docs --config docs/.markdownlint.json",
-    "spellcheck": "mdspell 'docs/**/*.md' '*.md' -r --en-gb --ignore-numbers --ignore-acronyms",
+    "spellcheck": "mdspell 'docs/**/*.md' -r --en-gb --ignore-numbers --ignore-acronyms",
     "internalbroken": "remark -u validate-links docs --ignore-path .remarkignore",
     "externalbroken": "awesome_bot --allow-redirect --allow-dupe --skip-save-results docs/**/*.md",
     "brokenlinks": "npm run internalbroken; npm run externalbroken",
